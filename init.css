@@ -13,10 +13,15 @@
     float: left;
 }
 
+#myInput{
+    padding: 0 15px;
+    max-width: 100%;
+}
+
 /* Include the padding and border in an element's total width and height */
 * {
     box-sizing: border-box;
-    font-size: large;
+    font-size: 18px;
 }
 
 /* Remove margins and padding from the list */
@@ -60,13 +65,27 @@ ul li.checked {
     text-decoration: line-through;
 }
 
+/* Add a "selectbox" mark when clicked on */
+ul li::before {
+    content: '';
+    position: absolute;
+    border-color:darkcyan;
+    border-style: solid;
+    border-width: 3px;
+    top: 10px;
+    left: 10px;
+    height: 15px;
+    width: 15px;
+}
+
+
 /* Add a "checked" mark when clicked on */
 ul li.checked::before {
     content: '';
     position: absolute;
     border-color: #fff;
     border-style: solid;
-    border-width: 0 2px 2px 0;
+    border-width: 0 2px 5px 0;
     top: 10px;
     left: 16px;
     transform: rotate(45deg);
@@ -92,8 +111,4 @@ ul li.checked::before {
 .header:after {
     content: "";
     clear: both;
-}
-
-.addBtn:hover {
-    background-color: #blue;
 }
