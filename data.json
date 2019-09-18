@@ -1,0 +1,8 @@
+[
+    {"info" : "Hit the gym", "check" : "0"},
+    {"info" : "Pay bills", "check" : "0"},
+    {"info" : "Meet George", "check" : "0"},
+    {"info" : "Buy eggs", "check" : "1"},
+    {"info" : "Read a book", "check" : "0"},
+    {"info" : "Organize office", "check" : "0"}
+]
