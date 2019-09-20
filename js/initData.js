@@ -5,7 +5,7 @@ window.onload = function () {
     var newElementModule = require("./create.js");
     var deletModule = require("./delet.js");
 
-    readTextFileModule.readTextFile("../data.json", function (text) {
+    readTextFileModule.readTextFile("./data.json", function (text) {
         var json = JSON.parse(text);
         for (let i = 0; i < json.length; i++) {
             var li = document.createElement("li");
