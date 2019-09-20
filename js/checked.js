@@ -1,4 +1,4 @@
-function checked() {
+export function checked() {
     // Add a "checked" symbol when clicking on a list item
     var todolist = document.getElementById("myUL");
     todolist.addEventListener('click', function (ev) {

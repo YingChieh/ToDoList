@@ -1,4 +1,4 @@
-function readTextFile(file, callback) {
+export function readTextFile(file, callback) {
     var rawFile = new XMLHttpRequest();
     rawFile.overrideMimeType("application/json");
     rawFile.open("GET", file, true);

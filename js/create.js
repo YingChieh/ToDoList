@@ -1,4 +1,4 @@
-function newElement() {
+export function newElement() {
     var li = document.createElement("li");
     li.className = "element";
     var inputValue = document.getElementById("myInput").value;
@@ -12,16 +12,16 @@ function newElement() {
     document.getElementById("myInput").value = "";
 
     var span = document.createElement("SPAN");
-    span.setAttribute("onclick", "delet(this)");
+//    span.setAttribute("onclick", "delet(this)");
     var txt = document.createTextNode("\u00D7");
     span.className = "close";
     span.appendChild(txt);
     li.appendChild(span);
 
-    for (i = 0; i < close.length; i++) {
-        close[i].onclick = function () {
-            var div = this.parentElement;
-            div.style.display = "none";
-        }
-    }
+//    for (i = 0; i < close.length; i++) {
+//        close[i].onclick = function () {
+//            var div = this.parentElement;
+//            div.style.display = "none";
+//        }
+//    }
 }
